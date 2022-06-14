@@ -1,0 +1,70 @@
+:root {
+    --normal-border: 1px solid lightgray;
+    --bold-border: 2px solid gray;
+}
+
+.board {
+    border-spacing: 0px;
+}
+
+.cell {
+    padding: 0px;
+    position: relative;
+    width: 42px;
+    height: 42px;
+}
+
+.cell:not(:last-of-type) {
+    border-right: var(--normal-border);
+}
+
+.row:not(:last-of-type) > .cell {
+    border-bottom: var(--normal-border);
+}
+
+.cell:first-of-type {
+    border-left: var(--bold-border);
+}
+
+.cell:nth-of-type(3n) {
+    border-right: var(--bold-border);
+}
+
+.row:first-of-type > .cell {
+    border-top: var(--bold-border);
+}
+
+.row:nth-of-type(3n) > .cell {
+    border-bottom: var(--bold-border);
+}
+
+.solvedCell {
+    position: absolute;
+    inset: 0;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: royalblue;
+    opacity: 0.5;
+}
+
+.input {
+    position: absolute;
+    inset: 0;
+    padding: 0px;
+    font-size: large;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    background: transparent;
+}
+
+.input::-webkit-inner-spin-button {
+    display: none;
+}
