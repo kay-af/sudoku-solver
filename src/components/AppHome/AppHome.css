@@ -1,0 +1,29 @@
+.HomeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.MainRegion {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 0px;
+    flex: 1;
+}
+
+.SudokuContainer {
+    padding: 32px;
+    width: 0px;
+    flex: 1;
+    overflow: auto;
+}
+
+.ButtonBar {
+    display: flex;
+    flex-direction: row;
+    background: royalblue;
+    padding: 4px;
+    gap: 4px;
+}
