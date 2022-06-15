@@ -48,6 +48,8 @@
     text-align: center;
     color: royalblue;
     opacity: 0.5;
+    user-select: none;
+    background: transparent;
 }
 
 .input {
@@ -65,6 +67,22 @@
     background: transparent;
 }
 
+.errorInput {
+    color: red;
+}
+
 .input::-webkit-inner-spin-button {
     display: none;
+}
+
+.errorText {
+    color: red;
+    font-weight: bold;
+    font-size: small;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.errorIcon {
+    margin-right: 8px;
 }

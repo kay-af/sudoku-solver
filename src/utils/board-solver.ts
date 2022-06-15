@@ -2,7 +2,8 @@ import {
   generateShuffledArray,
   parseBoard,
   stringifyBoard,
-  validateCell,
+  validateParsedBoard,
+  validateParsedBoardCell,
 } from "./board-utils";
 
 const solveBoardRecursively = (
@@ -23,14 +24,13 @@ const solveBoardRecursively = (
     }
 
     if (board[i][j] !== 0) {
-      if (!validateCell(board, i, j)) return undefined;
       return solveBoardRecursively(board, nextRow, nextColumn);
     } else {
       // Check the next number in random order to get random solutions
       const selections = generateShuffledArray();
       for (let choice of selections) {
         board[i][j] = choice;
-        if (validateCell(board, i, j)) {
+        if (validateParsedBoardCell(board, i, j)) {
           const result = solveBoardRecursively(board, nextRow, nextColumn);
           if (result) return result;
         }
@@ -43,5 +43,6 @@ const solveBoardRecursively = (
 
 export const solveBoard = (board: string[][]): string[][] | undefined => {
   const parsedBoard = parseBoard(board);
+  if (!validateParsedBoard(parsedBoard)) return;
   return solveBoardRecursively(parsedBoard, 0, 0);
 };

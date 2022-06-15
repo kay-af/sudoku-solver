@@ -1,6 +1,6 @@
-import { Router } from "router";
 import React from "react";
+import { Solver } from "pages/solver";
 
 export const App = () => {
-  return <Router />;
+  return <Solver />;
 };

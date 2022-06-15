@@ -1,7 +1,5 @@
-export const generateEmptyBoard = (): string[][] => {
-  const board: string[][] = Array(9).fill(Array(9).fill(""));
-  return board;
-};
+export const generateEmptyBoard = (): string[][] =>
+  Array(9).fill(Array(9).fill(""));
 
 export const stringifyBoard = (board: number[][]): string[][] => {
   return board.map<string[]>((row) =>
@@ -32,11 +30,14 @@ export const generateShuffledArray = (): number[] => {
     array[i] = array[j];
     array[j] = temp;
   }
-  console.log(array);
   return array;
 };
 
-export const validateCell = (board: number[][], i: number, j: number) => {
+export const validateParsedBoardCell = (
+  board: number[][],
+  i: number,
+  j: number
+): boolean => {
   const size = board.length;
 
   // Check for row
@@ -72,4 +73,10 @@ export const validateCell = (board: number[][], i: number, j: number) => {
   }
 
   return true;
+};
+
+export const validateParsedBoard = (board: number[][]) => {
+  return board.every((row, i) =>
+    row.every((_, j) => validateParsedBoardCell(board, i, j))
+  );
 };
