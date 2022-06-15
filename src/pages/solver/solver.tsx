@@ -10,6 +10,7 @@ import { SudokuBoardController } from "components/sudoku-board/sudoku-board.type
 import React, { useCallback, useRef } from "react";
 import { useState } from "react";
 import { generateEmptyBoard } from "utils/board-utils";
+import styles from "./solver.module.css";
 
 export const Solver = () => {
   const [board, setBoard] = useState<string[][]>(generateEmptyBoard());
@@ -30,12 +31,14 @@ export const Solver = () => {
           board={board}
           onBoardChange={setBoard}
         />
-        <Button
-          onClick={onClickRegenerate}
-          icon={<FontAwesomeIcon icon={faRepeat} />}
-        >
-          Regenerate Solution
-        </Button>
+        <div className={styles.solutionButtonContainer}>
+          <Button
+            onClick={onClickRegenerate}
+            icon={<FontAwesomeIcon icon={faRepeat} />}
+          >
+            Regenerate Solution
+          </Button>
+        </div>
       </SolverSection>
       <Footer />
     </Main>

@@ -12,6 +12,8 @@
     position: relative;
     width: 42px;
     height: 42px;
+    min-width: 32px;
+    min-height: 32px;
 }
 
 .cell:not(:last-of-type) {
@@ -85,4 +87,18 @@
 
 .errorIcon {
     margin-right: 8px;
+}
+
+@media (max-width: 430px) {
+    .board {
+        margin: auto;
+        margin-top: 32px;
+    }
+    .cell {
+        width: 32px;
+        height: 32px;
+    }
+    .errorText {
+        text-align: center;
+    }
 }
