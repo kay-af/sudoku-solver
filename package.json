@@ -2,7 +2,6 @@
   "name": "sudoku-solver",
   "version": "1.0.0",
   "private": true,
-  "homepage": "/sudoku-solver",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
