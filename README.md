@@ -10,7 +10,7 @@ A simple backtracking algorithm is used to implement the board solver
 
 # Development
 
-Clone the project and run `yarn`
+Clone the project and run `yarn install`
 
 `yarn start` to run the application in local server
 
