@@ -1,6 +1,6 @@
 # Sudoku solver
 
-[Launch Application](https://kay-af.github.io/sudoku-solver/)
+[Launch Application](https://projects.freedee.me/sudoku-solver)
 
 Made in **React** with **Typescript**
 
