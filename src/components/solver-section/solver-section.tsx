@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./solver-section.module.css";
 import { SolverSectionProps } from "./solver-section.types";
 

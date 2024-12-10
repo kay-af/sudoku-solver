@@ -6,8 +6,7 @@ import { Main } from "components/main";
 import { SolverSection } from "components/solver-section";
 import { SudokuBoard } from "components/sudoku-board/sudoku-board";
 import { SudokuBoardController } from "components/sudoku-board/sudoku-board.types";
-import React, { useCallback, useRef } from "react";
-import { useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { generateEmptyBoard } from "utils/board-utils";
 import styles from "./solver.module.css";
 

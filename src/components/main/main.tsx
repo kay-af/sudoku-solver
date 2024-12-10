@@ -1,6 +1,5 @@
-import React from "react";
-import styles from "./main.module.css";
 import { useWindowSize } from "react-use";
+import styles from "./main.module.css";
 import { MainProps } from "./main.types";
 
 export const Main = (props: MainProps) => {
