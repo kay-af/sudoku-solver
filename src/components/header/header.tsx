@@ -1,6 +1,5 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import styles from "./header.module.css";
 
 export const Header = () => {
@@ -10,7 +9,7 @@ export const Header = () => {
       <a href="https://github.com/kay-af/sudoku-solver">
         <FontAwesomeIcon icon={faGithub} color="white" />
       </a>
-      <a href="https://www.linkedin.com/in/afridi-kayal-ba110719b/">
+      <a href="https://www.linkedin.com/in/afridi-kayal/">
         <FontAwesomeIcon icon={faLinkedin} color="white" />
       </a>
     </header>
