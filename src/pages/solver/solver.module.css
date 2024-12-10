@@ -1,5 +1,9 @@
+.solutionButtonContainer {
+  margin-top: 8px;
+}
+
 @media (max-width: 430px) {
-    .solutionButtonContainer {
-       text-align: center;
-    }   
+  .solutionButtonContainer {
+    text-align: center;
+  }
 }

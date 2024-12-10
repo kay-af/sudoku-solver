@@ -1,7 +1,6 @@
 import { faRepeat } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "components/button";
-import { Footer } from "components/footer";
 import { Header } from "components/header";
 import { Main } from "components/main";
 import { SolverSection } from "components/solver-section";
@@ -40,7 +39,6 @@ export const Solver = () => {
           </Button>
         </div>
       </SolverSection>
-      <Footer />
     </Main>
   );
 };
